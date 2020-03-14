@@ -1,2 +1,24 @@
 <!--page/home/home.wxml-->
-<text class="tt">hello world</text>
+
+<!-- 小程序初体验 -->
+
+<!-- 1.小程序的数据绑定:{{}}- > Mustache语法 /双大括号语法 -->
+<view>hello {{name}}</view> 
+<view>我的年龄：{{age}}</view>
+<!-- 调用在js里面定义的变量 -->
+
+
+<!-- 2.列表展示 -->
+<view>{{students[0].name}}</view>
+<!-- 单个展示 -->
+
+<!-- 使用指令 wx:for -->
+<view wx:for='{{students}}'> {{item.name}}-{{item.age}}</view>
+<!-- 遍历students列表，使用wx:for指令会自动生成item变量，直接调用即可 -->
+
+<!-- 3. 事件监听 改变data-->
+<!-- 每点击一下+按钮，cn就增加1 -->
+<view>当前计数：{{cn}}</view>
+<button bindtap="handleBtnLICK">+</button>
+<button bindtap="handleBtnLess">-</button>
+<!-- bindtap:绑定点击事件的处理函数 -->

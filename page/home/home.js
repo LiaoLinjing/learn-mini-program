@@ -1,66 +1,42 @@
 // page/home/home.js
+
+// 逻辑层
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    name:'code',
+    age:18,
+
+    // 例如从服务器上获取了一个列表的数据,
+    students:[
+      {id:118,name:'kobe',age:30},//对象
+      { id: 111, name: 'jam', age: 28 },//对象
+      { id: 112, name: 'coco', age: 17 },//对象
+      { id: 113, name: 'cindy', age: 20 },//对象
+
+    ],
+
+    cn:0
 
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
+  handleBtnLICK(){//按钮点击处理函数（自定义函数）
+    
+    // 1.错误的做法，虽然实际上cn是改变了，但是界面是不会刷新的，所以界面是不显示的
+    // this.data.cn +=1
+    // console.log(this.data.cn)//打印显示
+
+    // 2.this.setData
+    this.setData({cn:this.data.cn+1})
 
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  handleBtnLess(){
+    this.setData({ cn: this.data.cn - 1 })
   }
+
 })
