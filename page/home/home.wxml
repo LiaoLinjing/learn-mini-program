@@ -1,4 +1,4 @@
 <!--page/home/home.wxml-->
 <text class="tt">代码格式art+shift+f</text>
 
-<view>全局配置</view>
+<view>全局配置+页面配置</view>

@@ -9,7 +9,7 @@
     "navigationBarTitleText": "中国人寿",
     "backgroundColor": "#000000",
     "backgroundTextStyle": "light",
-    "enablePullDownRefresh": true
+    "enablePullDownRefresh": false 
   },
   "tabBar": {
 
@@ -29,7 +29,7 @@
       }
     ],
 
-    "selectedColor": "#000000"
+    "selectedColor": "#01a66c"
 
   }
 }
