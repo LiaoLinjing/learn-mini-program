@@ -2,5 +2,34 @@
   "pages": [
     "page/home/home",
     "page/about/about"
-  ]
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#01a66c",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "中国人寿",
+    "backgroundColor": "#000000",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+
+    "list": [
+      {
+        "pagePath": "page/home/home",
+        "text": "home",
+        "iconPath": "assets/tabbar/home.png",
+        "selectedIconPath": "assets/tabbar/home_click.png"
+      },
+
+      {
+        "pagePath": "page/about/about",
+        "text": "about",
+        "iconPath": "assets/tabbar/about.png",
+        "selectedIconPath": "assets/tabbar/about_click.png"
+      }
+    ],
+
+    "selectedColor": "#000000"
+
+  }
 }

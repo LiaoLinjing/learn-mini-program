@@ -1,2 +1,4 @@
 <!--page/home/home.wxml-->
-<text class="tt">hello world</text>
+<text class="tt">代码格式art+shift+f</text>
+
+<view>全局配置</view>
