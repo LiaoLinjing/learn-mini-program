@@ -1,0 +1,36 @@
+<!--page/image/image.wxml-->
+
+
+<!-- 1.--------image的基本使用--------- -->
+<!-- 
+  重点：
+  1.image组件可以写成单标签，也可以写成双标签，默认是双标签
+  2.image组件默认有自己的大小:320x240
+  3.image组件是一个行内块级元素（inline-block）
+ -->
+ <!-- 双标签 -->
+ <image>image1</image>
+<!-- 单标签 -->
+<image/>image2
+
+<!------------2.src：本地图片（相对路径/绝对路径）/远程图片-------- -->
+<!-- 相对路径：../表示当前wxml往上多少级 -->
+<image src="../../assets/image/cat.jpg"></image>
+<!-- 绝对路径 -->
+<image src="/assets/image/cat2.jpg"></image>
+<!-- 远程图片 -->
+<image src="http://5b0988e595225.cdn.sohucs.com/images/20180507/4f2a3ad79a764a6eb4e66b39254aa0c4.jpeg"></image>
+
+<!-- ----------补充：显示相册中的图片 -->
+<button bindtap="handlechoosePic">选中相册中的图片</button>
+<!-- 系统API，让用户在相册中选择图片或者拍照 -->
+<image src="{{imagepath}}"></image>
+
+<!------------3.bindload:监听图片加载完成-------- -->
+<!------------4.lazy-load-------- ---------------->
+<image wx:for='{{5}}'
+       src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"
+       bindload="handleimageload"
+       lazy-load="{{true}}">
+
+</image>

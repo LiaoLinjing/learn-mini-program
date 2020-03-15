@@ -1,0 +1,15 @@
+<!--page/input/input.wxml-->
+
+<!-- -------1.基本使用 -->
+<input class="input"></input>
+
+<input class="input"
+       value="淘宝"></input>
+
+       
+<!-- -------2.input绑定事件：eventhandle -->
+<input class="input"
+      placeholder="请输入"
+       bindinput="handleinput"
+       bindfocus="handlefous"
+       bindblur="handleblur"></input>

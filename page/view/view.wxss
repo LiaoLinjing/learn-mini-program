@@ -1,0 +1,35 @@
+/* page/view/view.wxss */
+
+.box1{
+
+  background: red;
+  color: white;
+
+}
+
+.box2{
+
+  width: 100px;
+  height: 100px;
+  background: green;
+}
+
+.box3{
+
+  width: 200px;
+  height: 200px;
+  background: yellow;
+  margin-top: 20px;
+}
+
+.box3_pressed{
+
+  background: pink;
+  
+}
+
+.box2_pressed{
+
+  background: gray;
+  font-size: 30px;
+}
