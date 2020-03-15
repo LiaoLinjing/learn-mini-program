@@ -1,2 +1,17 @@
 <!--page/home/home.wxml-->
-<text class="tt">hello world</text>
+<text class="tt">获取用户信息</text>
+
+<button 
+open-type="getUserInfo"
+bindgetuserinfo="handleUserInfo"
+>获取授权</button>
+
+
+
+<view wx:for="{{list}}">{{item.name}}-{{item.age}}</view>
+
+<!-- 监听view -->
+<view bindtap="handleviewClick">{{message}}</view>
+
+<view wx:for="{{num}}">{{item}}</view>
+
